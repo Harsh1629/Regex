@@ -20,8 +20,8 @@ Regex/
 │       └── index.html       # input page for regex and e-mail validation
 |       └── result.html      # output for regex validation
 |       └── result2.html     # output for e-mail validation
-|   |__ application.py       #main python file 
-|   |__ requiremenrts.txt    # requirements.txt   
+|   |__ application.py       # main python file 
+|   |__ requirements.txt     # requirements.txt   
 └── README.md                # Documentation file
 
 ```
