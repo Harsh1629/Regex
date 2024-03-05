@@ -4,7 +4,7 @@
 "Experience streamlined data validation with our custom web application, equipped with a user-friendly interface for effortless E-mail validation using powerful regular expressions."
 
 ## Features
-- E-mail
+- E-mail Validation
 - Search in a string for expressions
 - Responsive design for mobile and desktop
 
