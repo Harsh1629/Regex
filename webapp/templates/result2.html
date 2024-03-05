@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Validation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1 class="result-header">Gmail Validation Result</h1>
+        <div class="result-section">
+            <strong>Email Address:</strong> {{ email_address }}
+        </div>
+        <div class="result-section">
+            <strong>Result:</strong> {{ gmail_result }}
+        </div>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Validation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .result-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .result-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .result-section {
+            margin-bottom: 20px;
+        }
+
+        .result-section strong {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .validation-result {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #28a745;
+        }
+
+        .invalid {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1 class="result-header">Gmail Validation Result</h1>
+        <div class="result-section">
+            <strong>Email Address:</strong> {{ email_address }}
+        </div>
+        <div class="result-section">
+            <span class="validation-result {{ 'invalid' if 'Not a valid' in gmail_result else '' }}">{{ gmail_result }}</span>
+        </div>
+    </div>
+</body>
+</html>

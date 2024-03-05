@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Match Found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Regex Match Found</h1>
+    <form action="/validate" method="post">
+        <label for="inputString">Enter Input String:</label>
+        <input type="text" id="inputString" name="inputString">
+        <label for="regexPattern">Enter Regex Pattern:</label>
+        <input type="text" id="regexPattern" name="regexPattern">
+        <button type="submit">Validate</button>
+    </form>
+    <h2>Validate Gmail Address</h2>
+    <form action="/validate-gmail" method="post">
+        <label for="emailAddress">Enter Email Address:</label>
+        <input type="text" id="emailAddress" name="emailAddress">
+        <button type="submit">Validate Gmail</button>
+    </form>
+</body>
+</html>
